@@ -18,6 +18,10 @@
   visibility: visible;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 .form-element {
   display: block;
 }

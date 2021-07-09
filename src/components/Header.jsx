@@ -24,6 +24,7 @@ function Header() {
           className="pick"
           onClick={() => {
             let x = document.querySelector(".popup-actual");
+            x.classList.remove("hide");
             x.classList.add("show");
           }}
         >
