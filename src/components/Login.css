@@ -1,7 +1,7 @@
 .popup-actual {
   position: fixed;
-  top: 35%;
-  left: 35%;
+  top: 18vh;
+  left: 35vw;
   visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,7 @@
 
 .form-element {
   display: block;
+  margin: 10px;
 }
 
 .cross {
@@ -40,4 +41,14 @@
   display: flex;
   justify-content: space-around;
   font-size: 0.5em;
+}
+
+@media (max-width: 800px) {
+  .popup-actual {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 80%;
+    height: 80%;
+  }
 }
