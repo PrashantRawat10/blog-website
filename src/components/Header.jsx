@@ -4,6 +4,8 @@ import "./Header.css";
 import Topic from "./Topic";
 import Login from "./Login";
 import "./Login.css";
+import Signup from "./Signup";
+import "./Signup.css";
 
 function Header() {
   return (
@@ -23,23 +25,31 @@ function Header() {
         <li
           className="pick"
           onClick={() => {
-            let x = document.querySelector(".popup-actual");
+            let x = document.querySelector(".popup-actual-login");
             x.classList.remove("hide");
             x.classList.add("show");
           }}
         >
           login
         </li>
-        <li>signup</li>
+        <li
+          onClick={() => {
+            let x = document.querySelector(".popup-actual-signup");
+            x.classList.remove("hide");
+            x.classList.add("show");
+          }}
+        >
+          signup
+        </li>
         <li>settings</li>
         <li>notifications</li>
       </ul>
 
+      <Signup></Signup>
       <Login></Login>
 
       <div id="topic">
         <Topic />
-        {/* {Topic()} */}
       </div>
     </div>
   );

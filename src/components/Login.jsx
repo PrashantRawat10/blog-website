@@ -3,7 +3,7 @@ import "./Login.css";
 
 function Login() {
   return (
-    <div class="popup-actual">
+    <div class="popup-actual-login">
       <form>
         <label for="username">UserName:</label>
         <input type="text" id="username" placeholder="Enter Username"></input>
@@ -13,8 +13,8 @@ function Login() {
           type="submit"
           value="close"
           onClick={() => {
-            let toggle = document.querySelector(".popup-actual");
-            toggle.classList.remove("hide");
+            let toggle = document.querySelector(".popup-actual-login");
+            toggle.classList.remove("show");
             toggle.classList.add("hide");
           }}
         ></input>
