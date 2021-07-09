@@ -1,4 +1,4 @@
-.popup-actual-login {
+.popup-actual {
   position: fixed;
   top: 35%;
   left: 35%;
@@ -6,22 +6,6 @@
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  /* text-align: center; */
-  background-color: cadetblue;
-  padding: 20px;
-  z-index: 1;
-  width: 30%;
-}
-
-.popup-actual-signup {
-  position: fixed;
-  top: 35%;
-  left: 35%;
-  display: flex;
-  flex-direction: column;
-  visibility: hidden;
-  border: 1px solid black;
-  /* text-align: center; */
   background-color: cadetblue;
   padding: 20px;
   z-index: 1;
@@ -50,4 +34,10 @@
   width: 30px;
   height: 30px;
   align-self: flex-end;
+}
+
+.small {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.5em;
 }

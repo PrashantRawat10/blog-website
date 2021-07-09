@@ -3,12 +3,12 @@ import "./Login.css";
 
 function Signup() {
   return (
-    <div className="popup-actual-signup">
+    <div className="popup-actual signup">
       <img
         className="cross"
         src="/images/cross.png"
         onClick={() => {
-          let toggle = document.querySelector(".popup-actual-signup");
+          let toggle = document.querySelector(".signup");
           toggle.classList.remove("show");
           toggle.classList.add("hide");
         }}

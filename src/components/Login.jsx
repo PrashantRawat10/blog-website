@@ -3,21 +3,21 @@ import "./Login.css";
 import Signup from "./Signup";
 
 function handleClick() {
-  let toggle = document.querySelector(".popup-actual-login");
+  let toggle = document.querySelector(".login");
   toggle.classList.remove("show");
   toggle.classList.add("hide");
 }
 
 function handleSignupClick() {
   handleClick();
-  let x = document.querySelector(".popup-actual-signup");
+  let x = document.querySelector(".signup");
   x.classList.remove("hide");
   x.classList.add("show");
 }
 
 function Login() {
   return (
-    <div class="popup-actual popup-actual-login">
+    <div class="popup-actual login">
       <img
         className="cross"
         src="/images/cross.png"
@@ -32,6 +32,16 @@ function Login() {
           <label for="password">Password:</label>
           <input type="password" id="password" placeholder="password"></input>
         </div>
+
+        <div className="form-element small">
+          <div>
+            <label for="rememeber">Remember me</label>
+            <input type="checkbox" id="rememeber"></input>
+          </div>
+
+          <input type="button" value="forgot password"></input>
+        </div>
+
         <input className="form-element" type="submit"></input>
         <input
           className="form-element"

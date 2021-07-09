@@ -6,6 +6,11 @@ import Login from "./Login";
 import "./Login.css";
 import Signup from "./Signup";
 import "./Signup.css";
+import Setting from "./Setting";
+
+function settingClickHandle() {
+  return;
+}
 
 function Header() {
   return (
@@ -25,7 +30,9 @@ function Header() {
         <li
           className="pick"
           onClick={() => {
-            let x = document.querySelector(".popup-actual-login");
+            let x = document.querySelector(".login");
+            let y = document.querySelector(".signup");
+            y.classList.remove("show");
             x.classList.remove("hide");
             x.classList.add("show");
           }}
@@ -34,14 +41,18 @@ function Header() {
         </li>
         <li
           onClick={() => {
-            let x = document.querySelector(".popup-actual-signup");
+            let x = document.querySelector(".signup");
+            let y = document.querySelector(".login");
+            y.classList.remove("show");
             x.classList.remove("hide");
             x.classList.add("show");
           }}
         >
           signup
         </li>
-        <li>settings</li>
+        <li>
+          <Setting></Setting>
+        </li>
         <li>notifications</li>
       </ul>
 
