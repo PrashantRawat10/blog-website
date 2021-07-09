@@ -6,12 +6,12 @@ function TopicList(props) {
   return (
     <DropdownButton
       as={ButtonGroup}
-      key={props[0]}
-      id={`dropdown-variants-${props[0]}`}
-      variant={props[0].toLowerCase()}
-      title={props[0]}
+      key={props.name}
+      id={`dropdown-variants-${props.name}`}
+      variant={props.name.toLowerCase()}
+      title={props.name}
     >
-      {props.map((e) => {
+      {props.nameArray.map((e) => {
         return <Dropdown.Item>{e}</Dropdown.Item>;
       })}
     </DropdownButton>
