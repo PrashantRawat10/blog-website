@@ -1,14 +1,14 @@
 .popup-actual {
   position: fixed;
-  top: 18vh;
-  left: 35vw;
+  top: 18%;
+  left: 35%;
   visibility: hidden;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   background-color: cadetblue;
   padding: 20px;
-  z-index: 1;
+  z-index: 5;
   width: 30%;
 }
 
@@ -49,6 +49,6 @@
     top: 10vh;
     left: 10vw;
     width: 80%;
-    height: 80%;
+    height: 500px;
   }
 }

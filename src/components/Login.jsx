@@ -1,20 +1,20 @@
 import React from "react";
 import "./Login.css";
 
-function handleClick() {
-  let toggle = document.querySelector(".login");
-  toggle.classList.remove("show");
-  toggle.classList.add("hide");
-}
-
-function handleSignupClick() {
-  handleClick();
-  let x = document.querySelector(".signup");
-  x.classList.remove("hide");
-  x.classList.add("show");
-}
-
 function Login() {
+  function handleClick() {
+    let toggle = document.querySelector(".login");
+    toggle.classList.remove("show");
+    toggle.classList.add("hide");
+  }
+
+  function handleSignupClick() {
+    handleClick();
+    let x = document.querySelector(".signup");
+    x.classList.remove("hide");
+    x.classList.add("show");
+  }
+
   return (
     <div class="popup-actual login">
       <img

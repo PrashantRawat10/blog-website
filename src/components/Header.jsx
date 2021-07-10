@@ -7,6 +7,7 @@ import "./Login.css";
 import Signup from "./Signup";
 import "./Signup.css";
 import Setting from "./Setting";
+import Notes from "./Notes";
 
 function Header() {
   window.onscroll = function () {
@@ -47,6 +48,8 @@ function Header() {
             y.classList.remove("show");
             x.classList.remove("hide");
             x.classList.add("show");
+            let app = document.querySelector("#root");
+            app.classList.add("black-body");
           }}
         >
           login
@@ -58,6 +61,8 @@ function Header() {
             y.classList.remove("show");
             x.classList.remove("hide");
             x.classList.add("show");
+            let app = document.querySelector("#root");
+            app.classList.add("black-body");
           }}
         >
           signup
@@ -74,6 +79,8 @@ function Header() {
       <div id="topic">
         <Topic />
       </div>
+
+      <Notes></Notes>
     </div>
   );
 }

@@ -52,7 +52,7 @@ let topicArray = [
 
 function Topic() {
   return (
-    <div>
+    <div className="topic-subclass">
       {topicArray.map((topic) => {
         return TopicList(topic);
       })}
