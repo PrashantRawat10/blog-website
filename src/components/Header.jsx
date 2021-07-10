@@ -8,11 +8,23 @@ import Signup from "./Signup";
 import "./Signup.css";
 import Setting from "./Setting";
 
-function settingClickHandle() {
-  return;
-}
-
 function Header() {
+  window.onscroll = function () {
+    console.log("scroll");
+    let topics = document.querySelector("#topic");
+    if (
+      // document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+    ) {
+      topics.classList.add("fix-topic-top");
+    } else if (
+      // document.body.scrollTop < 100 ||
+      document.documentElement.scrollTop < 100
+    ) {
+      topics.classList.remove("fix-topic-top");
+    }
+  };
+
   return (
     <div id="header-container">
       <div id="logo" className="header-elements">

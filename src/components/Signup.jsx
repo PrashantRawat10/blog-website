@@ -12,6 +12,7 @@ function Signup() {
           toggle.classList.remove("show");
           toggle.classList.add("hide");
         }}
+        alt=""
       ></img>
       <form className="form">
         <div className="form-element">
@@ -27,8 +28,12 @@ function Signup() {
           ></input>
         </div>
         <div className="form-element">
-          <label for="password">Password :</label>
-          <input type="password" id="password" placeholder="password"></input>
+          <label for="password-signup">Password :</label>
+          <input
+            type="password"
+            id="password-signup"
+            placeholder="password"
+          ></input>
         </div>
 
         <input className="form-element" type="submit"></input>

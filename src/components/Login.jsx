@@ -1,6 +1,5 @@
 import React from "react";
 import "./Login.css";
-import Signup from "./Signup";
 
 function handleClick() {
   let toggle = document.querySelector(".login");
@@ -22,6 +21,7 @@ function Login() {
         className="cross"
         src="/images/cross.png"
         onClick={handleClick}
+        alt="cross"
       ></img>
       <form className="form">
         <div className="form-element">
@@ -29,8 +29,12 @@ function Login() {
           <input type="text" id="username" placeholder="Enter Username"></input>
         </div>
         <div className="form-element">
-          <label for="password">Password:</label>
-          <input type="password" id="password" placeholder="password"></input>
+          <label for="password-login">Password:</label>
+          <input
+            type="password"
+            id="password-login"
+            placeholder="password"
+          ></input>
         </div>
 
         <div className="form-element small">
