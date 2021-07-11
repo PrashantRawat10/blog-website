@@ -16,13 +16,13 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   /* height: 50px; */
   font-size: 20px;
 }
 
 #logo img {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 50%;
   width: 45px;
   height: 45px;
@@ -35,7 +35,7 @@
 }
 
 .header-elements {
-  margin: 5px 5px 0 5px;
+  margin: 5px 5px 0px 5px;
 }
 
 #logo {

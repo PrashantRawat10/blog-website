@@ -1,5 +1,5 @@
 // import { div } from "prelude-ls";
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Topic from "./Topic";
 import Login from "./Login";
@@ -10,6 +10,9 @@ import Setting from "./Setting";
 import Notes from "./Notes";
 
 function Header() {
+  const [showLogin, setLoginShow] = useState(false);
+  const [showSignup, setSignupShow] = useState(false);
+
   window.onscroll = function () {
     console.log("scroll");
     let topics = document.querySelector("#topic");
@@ -43,26 +46,17 @@ function Header() {
         <li
           className="pick"
           onClick={() => {
-            let x = document.querySelector(".login");
-            let y = document.querySelector(".signup");
-            y.classList.remove("show");
-            x.classList.remove("hide");
-            x.classList.add("show");
-            let app = document.querySelector("#root");
-            app.classList.add("black-body");
+            setLoginShow(() => !showLogin);
+            if (showSignup === true) setSignupShow(() => !showSignup);
           }}
         >
           login
         </li>
+
         <li
           onClick={() => {
-            let x = document.querySelector(".signup");
-            let y = document.querySelector(".login");
-            y.classList.remove("show");
-            x.classList.remove("hide");
-            x.classList.add("show");
-            let app = document.querySelector("#root");
-            app.classList.add("black-body");
+            setSignupShow(() => !showSignup);
+            if (showLogin === true) setLoginShow(() => !showLogin);
           }}
         >
           signup
@@ -73,8 +67,8 @@ function Header() {
         <li>notifications</li>
       </ul>
 
-      <Signup></Signup>
-      <Login></Login>
+      <Login show={showLogin}></Login>
+      <Signup show={showSignup}></Signup>
 
       <div id="topic">
         <Topic />

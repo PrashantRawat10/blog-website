@@ -1,16 +1,18 @@
 import React from "react";
 import "./Login.css";
 
-function Signup() {
+function Signup(props) {
   return (
-    <div className="popup-actual signup">
+    <div
+      className="popup-actual signup"
+      style={props.show ? { visibility: "visible" } : { visibility: "hidden" }}
+    >
       <img
         className="cross"
         src="/images/cross.png"
         onClick={() => {
           let toggle = document.querySelector(".signup");
-          toggle.classList.remove("show");
-          toggle.classList.add("hide");
+          toggle.style.visibility = "hidden";
         }}
         alt=""
       ></img>
