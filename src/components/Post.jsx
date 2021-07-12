@@ -1,10 +1,12 @@
-import { div } from "prelude-ls";
+// import { div } from "prelude-ls";
 import React from "react";
 import "./Post.css";
 
-function Post() {
+function Post(props) {
   return (
     <div className="post">
+      <h1>{props.heading}</h1>
+      <p>{props.content}</p>
       <h1 className="heading">Heading</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
