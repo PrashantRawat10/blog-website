@@ -8,6 +8,13 @@ import Signup from "./Signup";
 import "./Signup.css";
 import Setting from "./Setting";
 import Notes from "./Notes";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBell,faCog } from '@fortawesome/free-solid-svg-icons'
+
+
+// elements to use fontawesome icons
+const notif = <FontAwesomeIcon icon={faBell} />
+const setting = <FontAwesomeIcon icon={faCog} />
 
 function Header() {
   const [showLogin, setLoginShow] = useState(false);
@@ -32,14 +39,11 @@ function Header() {
   return (
     <div id="header-container">
       <div id="logo" className="header-elements">
-        <img src="/images/logo1.png" alt="logo" />
+        <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164153/8_big22-768x591.png" alt="logo" />
       </div>
 
       <ul id="header-navbar-mid" className="header-elements header-list">
-        <li>first</li>
-        <li>second</li>
-        <li>third</li>
-        <li>fourth</li>
+        <h1>DayNite Blogging</h1>
       </ul>
 
       <ul id="header-navbar-right" className="header-elements header-list">
@@ -50,7 +54,7 @@ function Header() {
             if (showSignup === true) setSignupShow(() => !showSignup);
           }}
         >
-          login
+            <button type="button" class="btn btn-info">Login</button>
         </li>
 
         <li
@@ -59,12 +63,13 @@ function Header() {
             if (showLogin === true) setLoginShow(() => !showLogin);
           }}
         >
-          signup
+          <button type="button" class="btn btn-success">Sign up</button>
         </li>
         <li>
-          <Setting></Setting>
+          <Setting>{setting}</Setting>
         </li>
-        <li>notifications</li>
+        
+        <li>{notif}</li>
       </ul>
 
       <Login show={showLogin}></Login>

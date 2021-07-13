@@ -24,7 +24,7 @@ function Login(props) {
         onClick={handleClick}
         alt="cross"
       ></img>
-      <form className="form">
+      {/* <form className="form">
         <div className="form-element">
           <label for="username">UserName:</label>
           <input type="text" id="username" placeholder="Enter Username"></input>
@@ -36,26 +36,27 @@ function Login(props) {
             id="password-login"
             placeholder="password"
           ></input>
-        </div>
+        </div> */}
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter your email' ></input>
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1"placeholder='Enter your password' ></input>
+            </div>
+            <div class="mb-3 form-check">
+                <a href="#" id="forget">Forget Password</a>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
 
-        <div className="form-element small">
-          <div>
-            <label for="rememeber">Remember me</label>
-            <input type="checkbox" id="rememeber"></input>
-          </div>
-
-          <input type="button" value="forgot password"></input>
-        </div>
-
-        <input className="form-element" type="submit"></input>
-        <input
-          className="form-element"
-          onClick={() => {
+            <button type="button" class="btn btn-success" 
+            onClick={() => {
             handleSignupClick();
-          }}
-          type="button"
-          value="Signup"
-        ></input>
+          }}>Sign up</button>
+
       </form>
     </div>
   );

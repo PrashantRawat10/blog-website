@@ -7,47 +7,10 @@ function Post(props) {
     <div className="post">
       <h1>{props.heading}</h1>
       <p>{props.content}</p>
-      <h1 className="heading">Heading</h1>
+      <h1 className="heading">Technology that will dominate humanity!</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        tenetur debitis nostrum, obcaecati sunt totam fuga doloremque eaque quam
-        ducimus provident odio non assumenda molestiae minima deleniti explicabo
-        excepturi numquam? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Doloribus aspernatur earum non temporibus hic possimus! Ipsum et
-        itaque veritatis iure similique iusto, quis unde tenetur quibusdam at,
-        hic facilis animi. Nisi modi placeat aliquid consequatur reprehenderit
-        nihil, laboriosam tempora nemo repellat sequi, similique accusantium
-        quae omnis optio exercitationem praesentium facilis recusandae quod
-        dignissimos corrupti deserunt? Nemo dicta quia error expedita? Possimus
-        corporis, fugiat delectus aperiam quasi aliquam. Dolorem consectetur,
-        reiciendis ut error praesentium doloremque ipsum ex magnam, ad animi
-        tenetur reprehenderit saepe perspiciatis commodi. Natus aspernatur velit
-        hic ad unde. Tenetur ut doloribus quidem repellendus libero dolorum
-        nulla, veritatis nam eveniet optio consequatur, similique repudiandae?
-        Nulla amet perspiciatis quas quae, voluptate cumque accusamus iste! Quia
-        saepe asperiores voluptatibus quas neque. Suscipit vitae voluptatibus ad
-        consequatur quibusdam sunt tenetur delectus dolorum libero vel et omnis
-        labore ex pariatur fuga accusantium, assumenda iusto aliquid impedit
-        similique sint modi aliquam. Nam, aspernatur voluptatem. Hic unde
-        necessitatibus molestias maiores natus cum ipsa ullam, commodi ratione
-        corporis quas debitis tempora cumque consectetur. Delectus,
-        exercitationem eveniet. Exercitationem quas saepe perspiciatis
-        similique? Obcaecati vero nihil odit dolore. Voluptate, dicta inventore
-        laborum dolores expedita, natus ipsa facere quod exercitationem
-        cupiditate tenetur nostrum sed explicabo perferendis aliquam
-        perspiciatis doloremque ad! Provident nam saepe sequi nobis tempora
-        illum, optio vel. Nostrum ab quibusdam ipsam quas in vitae tempora,
-        ducimus temporibus dolor tenetur corporis asperiores qui placeat! Est
-        blanditiis, mollitia placeat, fugit minus officia repellat optio
-        eveniet, eligendi adipisci reprehenderit. Eum. Minus eligendi dolores
-        cum ipsam quisquam expedita eum molestias blanditiis accusamus,
-        adipisci, nemo recusandae id? Veniam officia tempora ullam libero esse
-        aspernatur deserunt sint laborum, similique tenetur, consequatur,
-        architecto accusamus! Deserunt reprehenderit cupiditate sapiente sequi
-        rem asperiores natus inventore corrupti totam blanditiis ullam suscipit
-        soluta, in aliquid cum quasi hic maxime voluptates quisquam error,
-        mollitia libero quos voluptas! Ex, fuga?
-      </p>
+      Angelique Hedberg, senior corporate strategy analyst at RTI International, said, “If we choose a future we want in 50 years, and work toward creating it, there is a nonzero probability we will reach a version of that future. In that vein of thought, we will see waves of platform companies that change the way we live and enjoy our lives. The platform companies that exist today will fade, as will the ones that follow. This is not because they fail, but rather, because they succeed. We will find a way to make decisions in a network of decisions. In 50 years, multiple generations of a family will gather for dinner and share sights, smells, sounds, tastes and touches, even if they are in different hemispheres, countries and time zones. You’ll be at a child’s social activity and they will hear the voices [of] all of those who love (and critique) him. You will say goodbye to aging loved ones, even if they cannot hear you. This will all happen with the assistance of technology (some embedded in our brain) that know our wants and needs better than we know our own. The definition of what it means to be human will evolve and the laws and regulation will follow, albeit in a less than direct manner. We will value governments in new and different ways, and we will expect more from our technology platforms. The deluge of data will provide new inputs into the decision models for platforms, bringing greater clarity to the short-term benefits and long-term risks, in return making the financial decisions more social, environmental and moral. Where laws and regulations can put a bottom line, they will. Where law and regulations cannot, the planet will step in and regulate the excess.”
+      Daniel Riera, a professor of computer science at Universitat Oberta de Catalunya, commented, “Everything will be connected; automation will be everywhere; most of the jobs will be done by machines. Society will have fully changed to adapt to the new reality: Humans will need to realize the importance of sustainability and equality. In order to reach this point, technology, ethics, philosophy, laws and economics, among other fields, will have done a big joint effort. We have a very good opportunity. It will depend on us to take advantage of it. I hope and trust we will. Otherwise, we will disappear.”</p>
     </div>
   );
 }
