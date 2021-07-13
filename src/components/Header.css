@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  }
+}
 
 .black-body {
   backdrop-filter: blur(5px);
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 .header-list h1 {
-  font-family: 'Festive', cursive;
+  font-family: "Festive", cursive;
 }
 
 .header-elements {
@@ -49,8 +49,9 @@
 }
 #header-navbar-right {
   order: 3;
-  padding-left: 55%;  
+  padding-left: 50%;
 }
+
 #topic {
   order: 4;
   width: 100%;
