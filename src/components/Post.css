@@ -4,5 +4,12 @@
   text-justify: distribute;
   border: 1px solid black;
   padding: 5px;
-  margin: 20px;
+  margin: 2%;
+}
+
+.post h1{
+  font-family: 'Abril Fatface', cursive;
+}
+.post p{
+  font-size: 1.1rem;
 }
