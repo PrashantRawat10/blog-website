@@ -13,3 +13,15 @@
 .post p{
   font-size: 1.1rem;
 }
+.caro {
+  height: 30%;
+  width: 100%;
+}
+.caro img {
+  object-fit: cover;
+  border-radius: 0;
+}
+.caro h3{
+  color: black;
+  margin: 10% 70% 30% 3%;
+}

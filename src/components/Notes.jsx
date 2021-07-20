@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Notes.css";
 
 function Notes() {
-  const takeNote = "take note";
+  const takeNote = "Take note";
   const closeNote = "close note";
   const [noteOpen, setNoteOpen] = useState(false);
   // const [currNote, setCurrNote] = useState("hello world"); //to store notes in backend/database we can use currNote
