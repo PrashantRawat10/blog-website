@@ -1,10 +1,12 @@
 import React from "react";
 import "./Footer.css";
 
+const year= new Date().getFullYear();
+
 function Footer() {
   return (
     <div className="footer">
-      <p>footer copyright@</p>
+      <p> copyright@ Daynite Blogging {year} </p>
     </div>
   );
 }

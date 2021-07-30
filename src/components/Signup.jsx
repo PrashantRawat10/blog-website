@@ -16,30 +16,26 @@ function Signup(props) {
         }}
         alt=""
       ></img>
-      <form className="form">
-        <div className="form-element">
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Enter your email"></input>
-        </div>
-        <div className="form-element">
-          <label for="confirm-email">Confirm Email:</label>
-          <input
-            type="email"
-            id="confirm-email"
-            placeholder="confirm email"
-          ></input>
-        </div>
-        <div className="form-element">
-          <label for="password-signup">Password :</label>
-          <input
-            type="password"
-            id="password-signup"
-            placeholder="password"
-          ></input>
-        </div>
+      
 
-        <input className="form-element" type="submit"></input>
-      </form>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter your email'></input>
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1"></input>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1"></input>
+            </div>
+            
+            <button type="submit" class="btn btn-success">Sign-up</button>
+          </form>
     </div>
   );
 }

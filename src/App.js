@@ -1,18 +1,20 @@
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Post from "./components/Post";
+import {Carousel_cont,Post} from "./components/Post";
 import RightBar from "./components/RightBar";
+import CardsContainer from "./components/Cards";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <div className="mid-sec">
-        <Post></Post>
-        <RightBar></RightBar>
+        <Carousel_cont />
+        {/* <Post></Post> */}
+        {/* <RightBar></RightBar> */}
       </div>
-
+      <CardsContainer />
       <Footer></Footer>
     </div>
   );

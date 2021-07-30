@@ -13,3 +13,6 @@
 .elements li {
   display: inline-block;
 }
+.topic-subclass .dropdown btn-group{
+  color: aliceblue;
+}

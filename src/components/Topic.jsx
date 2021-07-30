@@ -5,7 +5,7 @@ import "./Topic.css";
 
 let topicArray = [
   {
-    name: "sports",
+    name: "Sports",
     nameArray: [
       "sports1",
       "sports2",
@@ -29,23 +29,23 @@ let topicArray = [
     ],
   },
   {
-    name: "cinema",
+    name: "Cinema",
     nameArray: ["bollywood", "hollywood", "tollywood", "jollywood"],
   },
   {
-    name: "country",
+    name: "Country",
     nameArray: ["India", "America", "Japan", "France"],
   },
   {
-    name: "ScientificResearch",
+    name: "Scientific Research",
     nameArray: ["sR1", "sR2", "sR3", "sR4", "sR5"],
   },
   {
-    name: "investment",
+    name: "Investment",
     nameArray: ["stocks", "mutual Funds", "RealEstate", "Gold"],
   },
   {
-    name: "defence",
+    name: "Defence",
     nameArray: ["Defence1", "Defence2", "Defence3", "Defence4", "Defence5"],
   },
 ];
@@ -59,5 +59,6 @@ function Topic() {
     </div>
   );
 }
+
 
 export default Topic;
